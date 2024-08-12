@@ -1,0 +1,6 @@
+Key Differences:
+@BeforeSuite/@AfterSuite: For actions before and after the entire test suite.
+@BeforeClass/@AfterClass: For actions before and after each test class.
+
+Use @BeforeSuite and @AfterSuite for suite-wide setup and teardown, and 
+@BeforeClass and @AfterClass for class-specific setup and teardown.
