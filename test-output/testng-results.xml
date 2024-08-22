@@ -1,71 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="8" failed="1" skipped="0">
+<testng-results ignored="1" total="25" passed="23" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-12T23:25:29 IST" name="Default suite" finished-at="2024-08-12T23:26:36 IST" duration-ms="66894">
+  <suite started-at="2024-08-23T00:06:48 IST" name="Default suite" finished-at="2024-08-23T00:09:53 IST" duration-ms="185176">
     <groups>
     </groups>
-    <test started-at="2024-08-12T23:25:29 IST" name="Default test" finished-at="2024-08-12T23:26:36 IST" duration-ms="66894">
-      <class name="testcases.LoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginPageTest@3eb738bb]" started-at="2024-08-12T23:25:29 IST" name="setUp" finished-at="2024-08-12T23:25:34 IST" duration-ms="5067" status="PASS">
+    <test started-at="2024-08-23T00:06:48 IST" name="Default test" finished-at="2024-08-23T00:09:53 IST" duration-ms="185176">
+      <class name="testcases.InventoryPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:06:48 IST" name="setUp" finished-at="2024-08-23T00:06:57 IST" duration-ms="9387" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginWithMultiCreds(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginPageTest@3eb738bb]" started-at="2024-08-12T23:25:34 IST" name="loginWithMultiCreds" data-provider="CredentialsSet1" finished-at="2024-08-12T23:25:37 IST" duration-ms="2443" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[standard_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[secret_sauce]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="verifyAboutMenuLinkTest()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:06:57 IST" name="verifyAboutMenuLinkTest" finished-at="2024-08-23T00:07:03 IST" duration-ms="5738" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginWithMultiCreds -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.LoginPageTest@3eb738bb]" started-at="2024-08-12T23:25:37 IST" name="tearDown" finished-at="2024-08-12T23:25:38 IST" duration-ms="1465" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginWithMultiCreds status=SUCCESS method=LoginPageTest.loginWithMultiCreds(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginPageTest@3eb738bb] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- verifyAboutMenuLinkTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:07:03 IST" name="tearDown" finished-at="2024-08-23T00:07:03 IST" duration-ms="389" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginPageTest@3eb738bb]" started-at="2024-08-12T23:25:38 IST" name="setUp" finished-at="2024-08-12T23:25:45 IST" duration-ms="6352" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:07:03 IST" name="setUp" finished-at="2024-08-23T00:07:09 IST" duration-ms="5849" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginWithMultiCreds(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginPageTest@3eb738bb]" started-at="2024-08-12T23:25:45 IST" name="loginWithMultiCreds" data-provider="CredentialsSet1" finished-at="2024-08-12T23:25:47 IST" duration-ms="2640" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[locked_out_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[secret_sauce]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="verifyFooterText()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:07:09 IST" name="verifyFooterText" finished-at="2024-08-23T00:07:09 IST" duration-ms="66" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFooterText -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:07:09 IST" name="tearDown" finished-at="2024-08-23T00:07:10 IST" duration-ms="259" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:07:10 IST" name="setUp" finished-at="2024-08-23T00:07:16 IST" duration-ms="6036" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyResetAppStateTest()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:07:16 IST" name="verifyResetAppStateTest" finished-at="2024-08-23T00:07:18 IST" duration-ms="2313" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[The following asserts failed:
-expected [https://www.saucedemo.com/] but found [https://www.saucedemo.com/inventory.html]]]>
+              <![CDATA[Testcase failed as remove button is still displayed expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-expected [https://www.saucedemo.com/] but found [https://www.saucedemo.com/inventory.html]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at testcases.LoginPageTest.loginWithMultiCreds(LoginPageTest.java:76)
+              <![CDATA[java.lang.AssertionError: Testcase failed as remove button is still displayed expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:1066)
+at org.testng.Assert.assertEquals(Assert.java:1054)
+at testcases.InventoryPageTest.verifyResetAppStateTest(InventoryPageTest.java:191)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -99,200 +82,264 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginWithMultiCreds -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.LoginPageTest@3eb738bb]" started-at="2024-08-12T23:25:47 IST" name="tearDown" finished-at="2024-08-12T23:25:48 IST" duration-ms="399" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginWithMultiCreds status=FAILURE method=LoginPageTest.loginWithMultiCreds(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginPageTest@3eb738bb] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- verifyResetAppStateTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:07:18 IST" name="tearDown" finished-at="2024-08-23T00:07:18 IST" duration-ms="323" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginPageTest@3eb738bb]" started-at="2024-08-12T23:25:48 IST" name="setUp" finished-at="2024-08-12T23:25:52 IST" duration-ms="4077" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:07:18 IST" name="setUp" finished-at="2024-08-23T00:07:25 IST" duration-ms="6386" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginWithMultiCreds(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginPageTest@3eb738bb]" started-at="2024-08-12T23:25:52 IST" name="loginWithMultiCreds" data-provider="CredentialsSet1" finished-at="2024-08-12T23:25:55 IST" duration-ms="2684" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[problem_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[secret_sauce]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="verifylogoutLinkTest()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:07:25 IST" name="verifylogoutLinkTest" finished-at="2024-08-23T00:07:26 IST" duration-ms="927" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginWithMultiCreds -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.LoginPageTest@3eb738bb]" started-at="2024-08-12T23:25:55 IST" name="tearDown" finished-at="2024-08-12T23:25:55 IST" duration-ms="193" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginWithMultiCreds status=SUCCESS method=LoginPageTest.loginWithMultiCreds(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginPageTest@3eb738bb] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- verifylogoutLinkTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:07:26 IST" name="tearDown" finished-at="2024-08-23T00:07:26 IST" duration-ms="368" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginPageTest@3eb738bb]" started-at="2024-08-12T23:25:55 IST" name="setUp" finished-at="2024-08-12T23:25:59 IST" duration-ms="4141" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:07:26 IST" name="setUp" finished-at="2024-08-23T00:07:32 IST" duration-ms="6411" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginWithMultiCreds(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginPageTest@3eb738bb]" started-at="2024-08-12T23:25:59 IST" name="loginWithMultiCreds" data-provider="CredentialsSet1" finished-at="2024-08-12T23:26:07 IST" duration-ms="7717" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[performance_glitch_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[secret_sauce]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="verifyBackPackPriceTest()[pri:1, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:07:32 IST" name="verifyBackPackPriceTest" finished-at="2024-08-23T00:07:32 IST" duration-ms="95" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginWithMultiCreds -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.LoginPageTest@3eb738bb]" started-at="2024-08-12T23:26:07 IST" name="tearDown" finished-at="2024-08-12T23:26:07 IST" duration-ms="222" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginWithMultiCreds status=SUCCESS method=LoginPageTest.loginWithMultiCreds(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginPageTest@3eb738bb] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- verifyBackPackPriceTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:07:32 IST" name="tearDown" finished-at="2024-08-23T00:07:33 IST" duration-ms="254" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginPageTest@3eb738bb]" started-at="2024-08-12T23:26:07 IST" name="setUp" finished-at="2024-08-12T23:26:12 IST" duration-ms="4957" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:07:33 IST" name="setUp" finished-at="2024-08-23T00:07:40 IST" duration-ms="7764" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginWithMultiCreds(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginPageTest@3eb738bb]" started-at="2024-08-12T23:26:12 IST" name="loginWithMultiCreds" data-provider="CredentialsSet1" finished-at="2024-08-12T23:26:14 IST" duration-ms="2668" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[error_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[secret_sauce]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="verifyBackPackTextTest()[pri:1, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:07:40 IST" name="verifyBackPackTextTest" finished-at="2024-08-23T00:07:41 IST" duration-ms="94" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginWithMultiCreds -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.LoginPageTest@3eb738bb]" started-at="2024-08-12T23:26:14 IST" name="tearDown" finished-at="2024-08-12T23:26:15 IST" duration-ms="186" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginWithMultiCreds status=SUCCESS method=LoginPageTest.loginWithMultiCreds(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginPageTest@3eb738bb] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- verifyBackPackTextTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:07:41 IST" name="tearDown" finished-at="2024-08-23T00:07:41 IST" duration-ms="304" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginPageTest@3eb738bb]" started-at="2024-08-12T23:26:15 IST" name="setUp" finished-at="2024-08-12T23:26:19 IST" duration-ms="4152" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:07:41 IST" name="setUp" finished-at="2024-08-23T00:07:47 IST" duration-ms="6045" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginWithMultiCreds(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginPageTest@3eb738bb]" started-at="2024-08-12T23:26:19 IST" name="loginWithMultiCreds" data-provider="CredentialsSet1" finished-at="2024-08-12T23:26:21 IST" duration-ms="2673" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[visual_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[secret_sauce]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="verifyBackPackThumbnailImgTest()[pri:1, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:07:47 IST" name="verifyBackPackThumbnailImgTest" finished-at="2024-08-23T00:07:47 IST" duration-ms="177" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginWithMultiCreds -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.LoginPageTest@3eb738bb]" started-at="2024-08-12T23:26:21 IST" name="tearDown" finished-at="2024-08-12T23:26:22 IST" duration-ms="202" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginWithMultiCreds status=SUCCESS method=LoginPageTest.loginWithMultiCreds(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginPageTest@3eb738bb] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- verifyBackPackThumbnailImgTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:07:47 IST" name="tearDown" finished-at="2024-08-23T00:07:47 IST" duration-ms="406" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginPageTest@3eb738bb]" started-at="2024-08-12T23:26:22 IST" name="setUp" finished-at="2024-08-12T23:26:26 IST" duration-ms="4343" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:07:47 IST" name="setUp" finished-at="2024-08-23T00:07:54 IST" duration-ms="6550" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyTitleTest()[pri:0, instance:testcases.LoginPageTest@3eb738bb]" started-at="2024-08-12T23:26:26 IST" name="verifyTitleTest" finished-at="2024-08-12T23:26:26 IST" duration-ms="12" status="PASS">
+        <test-method signature="verifyBackpackLinkTest()[pri:1, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:07:54 IST" name="verifyBackpackLinkTest" finished-at="2024-08-23T00:07:54 IST" duration-ms="245" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyTitleTest -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.LoginPageTest@3eb738bb]" started-at="2024-08-12T23:26:26 IST" name="tearDown" finished-at="2024-08-12T23:26:26 IST" duration-ms="180" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyTitleTest status=SUCCESS method=LoginPageTest.verifyTitleTest()[pri:0, instance:testcases.LoginPageTest@3eb738bb] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- verifyBackpackLinkTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:07:54 IST" name="tearDown" finished-at="2024-08-23T00:07:55 IST" duration-ms="292" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginPageTest@3eb738bb]" started-at="2024-08-12T23:26:26 IST" name="setUp" finished-at="2024-08-12T23:26:30 IST" duration-ms="4219" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:07:55 IST" name="setUp" finished-at="2024-08-23T00:08:01 IST" duration-ms="6331" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyUrlTest()[pri:1, instance:testcases.LoginPageTest@3eb738bb]" started-at="2024-08-12T23:26:30 IST" name="verifyUrlTest" finished-at="2024-08-12T23:26:30 IST" duration-ms="14" status="PASS">
+        <test-method signature="verifyBikeLightLinkTest()[pri:1, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:08:01 IST" name="verifyBikeLightLinkTest" finished-at="2024-08-23T00:08:01 IST" duration-ms="205" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyUrlTest -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.LoginPageTest@3eb738bb]" started-at="2024-08-12T23:26:30 IST" name="tearDown" finished-at="2024-08-12T23:26:31 IST" duration-ms="200" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyUrlTest status=SUCCESS method=LoginPageTest.verifyUrlTest()[pri:1, instance:testcases.LoginPageTest@3eb738bb] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- verifyBikeLightLinkTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:08:01 IST" name="tearDown" finished-at="2024-08-23T00:08:01 IST" duration-ms="285" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginPageTest@3eb738bb]" started-at="2024-08-12T23:26:31 IST" name="setUp" finished-at="2024-08-12T23:26:35 IST" duration-ms="4721" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:08:01 IST" name="setUp" finished-at="2024-08-23T00:08:08 IST" duration-ms="6210" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyLoginToApplicationTest()[pri:2, instance:testcases.LoginPageTest@3eb738bb]" started-at="2024-08-12T23:26:35 IST" name="verifyLoginToApplicationTest" finished-at="2024-08-12T23:26:36 IST" duration-ms="736" status="PASS">
+        <test-method signature="verifyBikeLightPriceTest()[pri:1, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:08:08 IST" name="verifyBikeLightPriceTest" finished-at="2024-08-23T00:08:08 IST" duration-ms="75" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLoginToApplicationTest -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.LoginPageTest@3eb738bb]" started-at="2024-08-12T23:26:36 IST" name="tearDown" finished-at="2024-08-12T23:26:36 IST" duration-ms="141" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyLoginToApplicationTest status=SUCCESS method=LoginPageTest.verifyLoginToApplicationTest()[pri:2, instance:testcases.LoginPageTest@3eb738bb] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- verifyBikeLightPriceTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:08:08 IST" name="tearDown" finished-at="2024-08-23T00:08:08 IST" duration-ms="280" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testcases.LoginPageTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:08:08 IST" name="setUp" finished-at="2024-08-23T00:08:15 IST" duration-ms="6644" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyBikeLightTextTest()[pri:1, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:08:15 IST" name="verifyBikeLightTextTest" finished-at="2024-08-23T00:08:15 IST" duration-ms="73" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBikeLightTextTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:08:15 IST" name="tearDown" finished-at="2024-08-23T00:08:15 IST" duration-ms="272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:08:15 IST" name="setUp" finished-at="2024-08-23T00:08:22 IST" duration-ms="6559" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyBikeLightThumbnailImgTest()[pri:1, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:08:22 IST" name="verifyBikeLightThumbnailImgTest" finished-at="2024-08-23T00:08:22 IST" duration-ms="217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBikeLightThumbnailImgTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:08:22 IST" name="tearDown" finished-at="2024-08-23T00:08:22 IST" duration-ms="301" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:08:22 IST" name="setUp" finished-at="2024-08-23T00:08:28 IST" duration-ms="6143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyBoltTshirtLinkTest()[pri:1, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:08:28 IST" name="verifyBoltTshirtLinkTest" finished-at="2024-08-23T00:08:28 IST" duration-ms="191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBoltTshirtLinkTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:08:28 IST" name="tearDown" finished-at="2024-08-23T00:08:29 IST" duration-ms="295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:08:29 IST" name="setUp" finished-at="2024-08-23T00:08:35 IST" duration-ms="6712" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyBoltTshirtPriceTest()[pri:1, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:08:35 IST" name="verifyBoltTshirtPriceTest" finished-at="2024-08-23T00:08:35 IST" duration-ms="83" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBoltTshirtPriceTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:08:35 IST" name="tearDown" finished-at="2024-08-23T00:08:36 IST" duration-ms="288" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:08:36 IST" name="setUp" finished-at="2024-08-23T00:08:44 IST" duration-ms="8178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyBoltTshirtTextTest()[pri:1, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:08:44 IST" name="verifyBoltTshirtTextTest" finished-at="2024-08-23T00:08:44 IST" duration-ms="76" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBoltTshirtTextTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:08:44 IST" name="tearDown" finished-at="2024-08-23T00:08:44 IST" duration-ms="246" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:08:44 IST" name="setUp" finished-at="2024-08-23T00:08:51 IST" duration-ms="6697" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyBoltTshirtThumbnailImgTest()[pri:1, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:08:51 IST" name="verifyBoltTshirtThumbnailImgTest" finished-at="2024-08-23T00:08:51 IST" duration-ms="233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBoltTshirtThumbnailImgTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:08:51 IST" name="tearDown" finished-at="2024-08-23T00:08:51 IST" duration-ms="286" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:08:51 IST" name="setUp" finished-at="2024-08-23T00:08:58 IST" duration-ms="6436" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyDropdownTest()[pri:1, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:08:58 IST" name="verifyDropdownTest" finished-at="2024-08-23T00:09:03 IST" duration-ms="5430" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDropdownTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:09:03 IST" name="tearDown" finished-at="2024-08-23T00:09:04 IST" duration-ms="361" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:09:04 IST" name="setUp" finished-at="2024-08-23T00:09:10 IST" duration-ms="6736" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyFacebookLogoTest()[pri:1, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:09:10 IST" name="verifyFacebookLogoTest" finished-at="2024-08-23T00:09:11 IST" duration-ms="79" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFacebookLogoTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:09:11 IST" name="tearDown" finished-at="2024-08-23T00:09:11 IST" duration-ms="276" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:09:11 IST" name="setUp" finished-at="2024-08-23T00:09:18 IST" duration-ms="6962" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyFleeceJacketPriceTest()[pri:1, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:09:18 IST" name="verifyFleeceJacketPriceTest" finished-at="2024-08-23T00:09:18 IST" duration-ms="83" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFleeceJacketPriceTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:09:18 IST" name="tearDown" finished-at="2024-08-23T00:09:18 IST" duration-ms="284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:09:18 IST" name="setUp" finished-at="2024-08-23T00:09:24 IST" duration-ms="6159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyFleeceJacketTest()[pri:1, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:09:24 IST" name="verifyFleeceJacketTest" finished-at="2024-08-23T00:09:25 IST" duration-ms="199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFleeceJacketTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:09:25 IST" name="tearDown" finished-at="2024-08-23T00:09:25 IST" duration-ms="315" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:09:25 IST" name="setUp" finished-at="2024-08-23T00:09:32 IST" duration-ms="7011" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyFleeceJacketTextTest()[pri:1, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:09:32 IST" name="verifyFleeceJacketTextTest" finished-at="2024-08-23T00:09:32 IST" duration-ms="86" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFleeceJacketTextTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:09:32 IST" name="tearDown" finished-at="2024-08-23T00:09:32 IST" duration-ms="299" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:09:32 IST" name="setUp" finished-at="2024-08-23T00:09:39 IST" duration-ms="7012" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyFleeceJacketThumbnailImgTest()[pri:1, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:09:39 IST" name="verifyFleeceJacketThumbnailImgTest" finished-at="2024-08-23T00:09:39 IST" duration-ms="207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFleeceJacketThumbnailImgTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:09:39 IST" name="tearDown" finished-at="2024-08-23T00:09:40 IST" duration-ms="303" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:09:40 IST" name="setUp" finished-at="2024-08-23T00:09:46 IST" duration-ms="6121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLinkedInLogoTest()[pri:1, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:09:46 IST" name="verifyLinkedInLogoTest" finished-at="2024-08-23T00:09:46 IST" duration-ms="81" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLinkedInLogoTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:09:46 IST" name="tearDown" finished-at="2024-08-23T00:09:46 IST" duration-ms="284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:09:46 IST" name="setUp" finished-at="2024-08-23T00:09:53 IST" duration-ms="6403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyTwitterLogoTest()[pri:1, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:09:53 IST" name="verifyTwitterLogoTest" finished-at="2024-08-23T00:09:53 IST" duration-ms="59" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTwitterLogoTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:09:53 IST" name="tearDown" finished-at="2024-08-23T00:09:53 IST" duration-ms="269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.InventoryPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

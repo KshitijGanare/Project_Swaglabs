@@ -1,6 +1,6 @@
 package testcases;
 
-import java.io.IOException;
+import java.io.IOException; 
 
 import org.testng.Assert;
 import org.testng.ITestResult;
@@ -23,7 +23,7 @@ public class LoginPageTest extends Testbase{
 	LoginPage login;
 	
 	@BeforeMethod
-	public void setUp() throws InterruptedException
+	public void setUp() throws InterruptedException, IOException
 	{
 		initialization();
 		login = new LoginPage();
@@ -85,4 +85,10 @@ public class LoginPageTest extends Testbase{
 		}		
 		driver.close();
 	}
+
 }
+
+
+
+
+

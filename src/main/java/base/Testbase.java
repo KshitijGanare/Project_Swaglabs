@@ -1,21 +1,41 @@
 package base;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import utility.ReadData;
+import utility.readData;
 
 public class Testbase {
 
 	public static WebDriver driver;
-	public static void initialization() throws InterruptedException
+	public static void initialization() throws InterruptedException, IOException
 	{
-		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
+		
+		String browserrr = ReadData.getData("browser");
+		
+		if(browserrr.equals("chrome"))
+		{
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
+		
+		}
+		else if (browserrr.equals("edge")) {
+			WebDriverManager.edgedriver().setup();
+			driver = new EdgeDriver();
+		}
+		else if (browserrr.equals("firefox")) {
+			WebDriverManager.firefoxdriver().setup();
+			driver = new FirefoxDriver();
+		}
 		
 		driver.manage().window().maximize();
-		driver.get("https://www.saucedemo.com/");
-		
+		driver.get(ReadData.getData("URL"));
 		Thread.sleep(2000);
 		
 	}
