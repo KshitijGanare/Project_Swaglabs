@@ -4,3 +4,7 @@ Key Differences:
 
 Use @BeforeSuite and @AfterSuite for suite-wide setup and teardown, and 
 @BeforeClass and @AfterClass for class-specific setup and teardown.
+
+
+Group ID - Group under which different projects will be made. (Iska name nahi dikhega) 
+Artifact ID - Name of the project

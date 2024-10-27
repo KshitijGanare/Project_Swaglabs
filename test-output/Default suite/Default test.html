@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>23/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Aug 23 00:06:48 IST 2024</td>
+<td>Started on:</td><td>Sun Aug 25 14:52:36 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>185 seconds (185176 ms)</td>
+<tr><td>Total time:</td><td>17 seconds (17072 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,15 +76,17 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testcases.InventoryPageTest.verifyResetAppStateTest()'><b>verifyResetAppStateTest</b><br>Test class: testcases.InventoryPageTest</td>
-<td><div><pre>java.lang.AssertionError: Testcase failed as remove button is still displayed expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1577)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:1066)
-	at org.testng.Assert.assertEquals(Assert.java:1054)
-	at testcases.InventoryPageTest.verifyResetAppStateTest(InventoryPageTest.java:191)
+<td title='testcases.BackPackProductPageTest.verifyBackToProductsButtonTest()'><b>verifyBackToProductsButtonTest</b><br>Test class: testcases.BackPackProductPageTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to be &quot;https://www.saucedemo.com/inventory.html&quot;. Current url: &quot;https://www.saucedemo.com/inventory-item.html?id=4&quot; (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.122, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56759}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56759/devtoo..., se:cdpVersion: 127.0.6533.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 47c664b4d3567bbc96103f99057302f1
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at pages.BackPackProdPage.verifyBackToProductsButton(BackPackProdPage.java:85)
+	at testcases.BackPackProductPageTest.verifyBackToProductsButtonTest(BackPackProductPageTest.java:82)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -113,15 +115,17 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1360312263", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1360312263'><pre>java.lang.AssertionError: Testcase failed as remove button is still displayed expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1577)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:1066)
-	at org.testng.Assert.assertEquals(Assert.java:1054)
-	at testcases.InventoryPageTest.verifyResetAppStateTest(InventoryPageTest.java:191)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1594981181", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1594981181'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to be &quot;https://www.saucedemo.com/inventory.html&quot;. Current url: &quot;https://www.saucedemo.com/inventory-item.html?id=4&quot; (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.122, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56759}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56759/devtoo..., se:cdpVersion: 127.0.6533.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 47c664b4d3567bbc96103f99057302f1
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at pages.BackPackProdPage.verifyBackToProductsButton(BackPackProdPage.java:85)
+	at testcases.BackPackProductPageTest.verifyBackToProductsButtonTest(BackPackProductPageTest.java:82)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -151,132 +155,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>2</td>
-<td>testcases.InventoryPageTest@233795b6</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='testcases.InventoryPageTest.verifyDropdownTest()'><b>verifyDropdownTest</b><br>Test class: testcases.InventoryPageTest</td>
-<td></td>
 <td>5</td>
-<td>testcases.InventoryPageTest@233795b6</td></tr>
-<tr>
-<td title='testcases.InventoryPageTest.verifyBikeLightThumbnailImgTest()'><b>verifyBikeLightThumbnailImgTest</b><br>Test class: testcases.InventoryPageTest</td>
-<td></td>
-<td>0</td>
-<td>testcases.InventoryPageTest@233795b6</td></tr>
-<tr>
-<td title='testcases.InventoryPageTest.verifyFleeceJacketTextTest()'><b>verifyFleeceJacketTextTest</b><br>Test class: testcases.InventoryPageTest</td>
-<td></td>
-<td>0</td>
-<td>testcases.InventoryPageTest@233795b6</td></tr>
-<tr>
-<td title='testcases.InventoryPageTest.verifyTwitterLogoTest()'><b>verifyTwitterLogoTest</b><br>Test class: testcases.InventoryPageTest</td>
-<td></td>
-<td>0</td>
-<td>testcases.InventoryPageTest@233795b6</td></tr>
-<tr>
-<td title='testcases.InventoryPageTest.verifyBackPackThumbnailImgTest()'><b>verifyBackPackThumbnailImgTest</b><br>Test class: testcases.InventoryPageTest</td>
-<td></td>
-<td>0</td>
-<td>testcases.InventoryPageTest@233795b6</td></tr>
-<tr>
-<td title='testcases.InventoryPageTest.verifyBikeLightLinkTest()'><b>verifyBikeLightLinkTest</b><br>Test class: testcases.InventoryPageTest</td>
-<td></td>
-<td>0</td>
-<td>testcases.InventoryPageTest@233795b6</td></tr>
-<tr>
-<td title='testcases.InventoryPageTest.verifyFleeceJacketPriceTest()'><b>verifyFleeceJacketPriceTest</b><br>Test class: testcases.InventoryPageTest</td>
-<td></td>
-<td>0</td>
-<td>testcases.InventoryPageTest@233795b6</td></tr>
-<tr>
-<td title='testcases.InventoryPageTest.verifyBikeLightPriceTest()'><b>verifyBikeLightPriceTest</b><br>Test class: testcases.InventoryPageTest</td>
-<td></td>
-<td>0</td>
-<td>testcases.InventoryPageTest@233795b6</td></tr>
-<tr>
-<td title='testcases.InventoryPageTest.verifyFleeceJacketTest()'><b>verifyFleeceJacketTest</b><br>Test class: testcases.InventoryPageTest</td>
-<td></td>
-<td>0</td>
-<td>testcases.InventoryPageTest@233795b6</td></tr>
-<tr>
-<td title='testcases.InventoryPageTest.verifyBoltTshirtThumbnailImgTest()'><b>verifyBoltTshirtThumbnailImgTest</b><br>Test class: testcases.InventoryPageTest</td>
-<td></td>
-<td>0</td>
-<td>testcases.InventoryPageTest@233795b6</td></tr>
-<tr>
-<td title='testcases.InventoryPageTest.verifyFooterText()'><b>verifyFooterText</b><br>Test class: testcases.InventoryPageTest</td>
-<td></td>
-<td>0</td>
-<td>testcases.InventoryPageTest@233795b6</td></tr>
-<tr>
-<td title='testcases.InventoryPageTest.verifyFleeceJacketThumbnailImgTest()'><b>verifyFleeceJacketThumbnailImgTest</b><br>Test class: testcases.InventoryPageTest</td>
-<td></td>
-<td>0</td>
-<td>testcases.InventoryPageTest@233795b6</td></tr>
-<tr>
-<td title='testcases.InventoryPageTest.verifyBikeLightTextTest()'><b>verifyBikeLightTextTest</b><br>Test class: testcases.InventoryPageTest</td>
-<td></td>
-<td>0</td>
-<td>testcases.InventoryPageTest@233795b6</td></tr>
-<tr>
-<td title='testcases.InventoryPageTest.verifyBackPackPriceTest()'><b>verifyBackPackPriceTest</b><br>Test class: testcases.InventoryPageTest</td>
-<td></td>
-<td>0</td>
-<td>testcases.InventoryPageTest@233795b6</td></tr>
-<tr>
-<td title='testcases.InventoryPageTest.verifyFacebookLogoTest()'><b>verifyFacebookLogoTest</b><br>Test class: testcases.InventoryPageTest</td>
-<td></td>
-<td>0</td>
-<td>testcases.InventoryPageTest@233795b6</td></tr>
-<tr>
-<td title='testcases.InventoryPageTest.verifyBoltTshirtTextTest()'><b>verifyBoltTshirtTextTest</b><br>Test class: testcases.InventoryPageTest</td>
-<td></td>
-<td>0</td>
-<td>testcases.InventoryPageTest@233795b6</td></tr>
-<tr>
-<td title='testcases.InventoryPageTest.verifyLinkedInLogoTest()'><b>verifyLinkedInLogoTest</b><br>Test class: testcases.InventoryPageTest</td>
-<td></td>
-<td>0</td>
-<td>testcases.InventoryPageTest@233795b6</td></tr>
-<tr>
-<td title='testcases.InventoryPageTest.verifylogoutLinkTest()'><b>verifylogoutLinkTest</b><br>Test class: testcases.InventoryPageTest</td>
-<td></td>
-<td>0</td>
-<td>testcases.InventoryPageTest@233795b6</td></tr>
-<tr>
-<td title='testcases.InventoryPageTest.verifyBoltTshirtLinkTest()'><b>verifyBoltTshirtLinkTest</b><br>Test class: testcases.InventoryPageTest</td>
-<td></td>
-<td>0</td>
-<td>testcases.InventoryPageTest@233795b6</td></tr>
-<tr>
-<td title='testcases.InventoryPageTest.verifyBoltTshirtPriceTest()'><b>verifyBoltTshirtPriceTest</b><br>Test class: testcases.InventoryPageTest</td>
-<td></td>
-<td>0</td>
-<td>testcases.InventoryPageTest@233795b6</td></tr>
-<tr>
-<td title='testcases.InventoryPageTest.verifyBackpackLinkTest()'><b>verifyBackpackLinkTest</b><br>Test class: testcases.InventoryPageTest</td>
-<td></td>
-<td>0</td>
-<td>testcases.InventoryPageTest@233795b6</td></tr>
-<tr>
-<td title='testcases.InventoryPageTest.verifyAboutMenuLinkTest()'><b>verifyAboutMenuLinkTest</b><br>Test class: testcases.InventoryPageTest</td>
-<td></td>
-<td>5</td>
-<td>testcases.InventoryPageTest@233795b6</td></tr>
-<tr>
-<td title='testcases.InventoryPageTest.verifyBackPackTextTest()'><b>verifyBackPackTextTest</b><br>Test class: testcases.InventoryPageTest</td>
-<td></td>
-<td>0</td>
-<td>testcases.InventoryPageTest@233795b6</td></tr>
+<td>testcases.BackPackProductPageTest@6989da5e</td></tr>
 </table><p>
 </body>
 </html>

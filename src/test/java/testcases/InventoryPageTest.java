@@ -1,9 +1,12 @@
 package testcases;
 
 import java.io.IOException;
+import java.time.Duration;
 
 import org.apache.commons.lang3.ObjectUtils.Null;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -14,11 +17,14 @@ import org.testng.asserts.SoftAssert;
 import base.Testbase;
 import pages.InventoryPage;
 import pages.LoginPage;
+import utility.Screenshot;
 
 public class InventoryPageTest extends Testbase{
-	
+
 	LoginPage login;
 	InventoryPage invent;
+	SoftAssert sa;
+	WebDriverWait wait;
 	
 	@BeforeMethod
 	public void setUp() throws InterruptedException, IOException
@@ -27,6 +33,9 @@ public class InventoryPageTest extends Testbase{
 		login = new LoginPage();
 		invent = new InventoryPage();		
 		login.verifyLoginToApplication();
+		
+		sa = new SoftAssert();
+		wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 	}
 	
 	@Test(priority = 1, enabled = true)
@@ -170,7 +179,6 @@ public class InventoryPageTest extends Testbase{
 	@Test
 	public void verifyAboutMenuLinkTest() throws InterruptedException
 	{
-		SoftAssert sa = new SoftAssert();
 		String expUrla = "https://saucelabs.com/";
 		String actUrla = invent.verifyAboutMenuLink();
 		sa.assertEquals(expUrla, actUrla);
@@ -189,6 +197,14 @@ public class InventoryPageTest extends Testbase{
 	{
 		Boolean actState = invent.verifyResetAppState();
 		Assert.assertEquals(false, actState,"Testcase failed as remove button is still displayed");
+	}
+	
+	@Test
+	public void verifyMenuCrossButtonTest() throws InterruptedException
+	{
+		Boolean actRes = invent.verifyMenuCrossButton();
+		Assert.assertEquals(false, actRes); // Element should not be present 
+		
 	}
 	
 	////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -229,6 +245,7 @@ public class InventoryPageTest extends Testbase{
 	}
 	
 	
+	
 	@Test(enabled = false)
 	public void verifyMouseMovementTest() throws InterruptedException
 	{
@@ -238,11 +255,14 @@ public class InventoryPageTest extends Testbase{
 	}
 	
 	@AfterMethod
-	public void tearDown()
+	public void tearDown(ITestResult itr) throws IOException
 	{
+		if(itr.FAILURE==itr.getStatus())
+		{
+			Screenshot.getScreenshot(itr.getName());
+		}
 		driver.quit();
 		
 	}
-	
-
+// Sort/Filter remaining 
 }

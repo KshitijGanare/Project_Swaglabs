@@ -1,6 +1,6 @@
 package testcases;
 
-import java.io.IOException; 
+import java.io.IOException;  
 
 import org.testng.Assert;
 import org.testng.ITestResult;
@@ -75,6 +75,8 @@ public class LoginPageTest extends Testbase{
 		sa.assertEquals(expUrl, actUrl);
 		sa.assertAll();
 	}
+	
+
 	
 	@AfterMethod
 	public void tearDown(ITestResult itr) throws IOException

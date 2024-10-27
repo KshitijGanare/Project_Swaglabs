@@ -1,54 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="25" passed="23" failed="1" skipped="0">
+<testng-results ignored="6" total="7" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-23T00:06:48 IST" name="Default suite" finished-at="2024-08-23T00:09:53 IST" duration-ms="185176">
+  <suite started-at="2024-08-25T14:52:36 IST" name="Default suite" finished-at="2024-08-25T14:52:53 IST" duration-ms="17072">
     <groups>
     </groups>
-    <test started-at="2024-08-23T00:06:48 IST" name="Default test" finished-at="2024-08-23T00:09:53 IST" duration-ms="185176">
-      <class name="testcases.InventoryPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:06:48 IST" name="setUp" finished-at="2024-08-23T00:06:57 IST" duration-ms="9387" status="PASS">
+    <test started-at="2024-08-25T14:52:36 IST" name="Default test" finished-at="2024-08-25T14:52:53 IST" duration-ms="17072">
+      <class name="testcases.BackPackProductPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.BackPackProductPageTest@6989da5e]" started-at="2024-08-25T14:52:36 IST" name="setUp" finished-at="2024-08-25T14:52:47 IST" duration-ms="11064" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyAboutMenuLinkTest()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:06:57 IST" name="verifyAboutMenuLinkTest" finished-at="2024-08-23T00:07:03 IST" duration-ms="5738" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAboutMenuLinkTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:07:03 IST" name="tearDown" finished-at="2024-08-23T00:07:03 IST" duration-ms="389" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:07:03 IST" name="setUp" finished-at="2024-08-23T00:07:09 IST" duration-ms="5849" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyFooterText()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:07:09 IST" name="verifyFooterText" finished-at="2024-08-23T00:07:09 IST" duration-ms="66" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyFooterText -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:07:09 IST" name="tearDown" finished-at="2024-08-23T00:07:10 IST" duration-ms="259" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:07:10 IST" name="setUp" finished-at="2024-08-23T00:07:16 IST" duration-ms="6036" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyResetAppStateTest()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:07:16 IST" name="verifyResetAppStateTest" finished-at="2024-08-23T00:07:18 IST" duration-ms="2313" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="verifyBackToProductsButtonTest()[pri:0, instance:testcases.BackPackProductPageTest@6989da5e]" started-at="2024-08-25T14:52:47 IST" name="verifyBackToProductsButtonTest" finished-at="2024-08-25T14:52:53 IST" duration-ms="5308" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Testcase failed as remove button is still displayed expected [true] but found [false]]]>
+              <![CDATA[Expected condition failed: waiting for url to be "https://www.saucedemo.com/inventory.html". Current url: "https://www.saucedemo.com/inventory-item.html?id=4" (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.122, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56759}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56759/devtoo..., se:cdpVersion: 127.0.6533.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 47c664b4d3567bbc96103f99057302f1]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Testcase failed as remove button is still displayed expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1577)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:1066)
-at org.testng.Assert.assertEquals(Assert.java:1054)
-at testcases.InventoryPageTest.verifyResetAppStateTest(InventoryPageTest.java:191)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to be "https://www.saucedemo.com/inventory.html". Current url: "https://www.saucedemo.com/inventory-item.html?id=4" (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.122, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56759}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56759/devtoo..., se:cdpVersion: 127.0.6533.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 47c664b4d3567bbc96103f99057302f1
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at pages.BackPackProdPage.verifyBackToProductsButton(BackPackProdPage.java:85)
+at testcases.BackPackProductPageTest.verifyBackToProductsButtonTest(BackPackProductPageTest.java:82)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -79,267 +62,22 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyResetAppStateTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:07:18 IST" name="tearDown" finished-at="2024-08-23T00:07:18 IST" duration-ms="323" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:07:18 IST" name="setUp" finished-at="2024-08-23T00:07:25 IST" duration-ms="6386" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifylogoutLinkTest()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:07:25 IST" name="verifylogoutLinkTest" finished-at="2024-08-23T00:07:26 IST" duration-ms="927" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifylogoutLinkTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:07:26 IST" name="tearDown" finished-at="2024-08-23T00:07:26 IST" duration-ms="368" status="PASS">
+        </test-method> <!-- verifyBackToProductsButtonTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.BackPackProductPageTest@6989da5e]" started-at="2024-08-25T14:52:53 IST" name="tearDown" finished-at="2024-08-25T14:52:53 IST" duration-ms="607" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyBackToProductsButtonTest status=FAILURE method=BackPackProductPageTest.verifyBackToProductsButtonTest()[pri:0, instance:testcases.BackPackProductPageTest@6989da5e] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:07:26 IST" name="setUp" finished-at="2024-08-23T00:07:32 IST" duration-ms="6411" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyBackPackPriceTest()[pri:1, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:07:32 IST" name="verifyBackPackPriceTest" finished-at="2024-08-23T00:07:32 IST" duration-ms="95" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyBackPackPriceTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:07:32 IST" name="tearDown" finished-at="2024-08-23T00:07:33 IST" duration-ms="254" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:07:33 IST" name="setUp" finished-at="2024-08-23T00:07:40 IST" duration-ms="7764" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyBackPackTextTest()[pri:1, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:07:40 IST" name="verifyBackPackTextTest" finished-at="2024-08-23T00:07:41 IST" duration-ms="94" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyBackPackTextTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:07:41 IST" name="tearDown" finished-at="2024-08-23T00:07:41 IST" duration-ms="304" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:07:41 IST" name="setUp" finished-at="2024-08-23T00:07:47 IST" duration-ms="6045" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyBackPackThumbnailImgTest()[pri:1, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:07:47 IST" name="verifyBackPackThumbnailImgTest" finished-at="2024-08-23T00:07:47 IST" duration-ms="177" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyBackPackThumbnailImgTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:07:47 IST" name="tearDown" finished-at="2024-08-23T00:07:47 IST" duration-ms="406" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:07:47 IST" name="setUp" finished-at="2024-08-23T00:07:54 IST" duration-ms="6550" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyBackpackLinkTest()[pri:1, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:07:54 IST" name="verifyBackpackLinkTest" finished-at="2024-08-23T00:07:54 IST" duration-ms="245" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyBackpackLinkTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:07:54 IST" name="tearDown" finished-at="2024-08-23T00:07:55 IST" duration-ms="292" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:07:55 IST" name="setUp" finished-at="2024-08-23T00:08:01 IST" duration-ms="6331" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyBikeLightLinkTest()[pri:1, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:08:01 IST" name="verifyBikeLightLinkTest" finished-at="2024-08-23T00:08:01 IST" duration-ms="205" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyBikeLightLinkTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:08:01 IST" name="tearDown" finished-at="2024-08-23T00:08:01 IST" duration-ms="285" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:08:01 IST" name="setUp" finished-at="2024-08-23T00:08:08 IST" duration-ms="6210" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyBikeLightPriceTest()[pri:1, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:08:08 IST" name="verifyBikeLightPriceTest" finished-at="2024-08-23T00:08:08 IST" duration-ms="75" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyBikeLightPriceTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:08:08 IST" name="tearDown" finished-at="2024-08-23T00:08:08 IST" duration-ms="280" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:08:08 IST" name="setUp" finished-at="2024-08-23T00:08:15 IST" duration-ms="6644" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyBikeLightTextTest()[pri:1, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:08:15 IST" name="verifyBikeLightTextTest" finished-at="2024-08-23T00:08:15 IST" duration-ms="73" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyBikeLightTextTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:08:15 IST" name="tearDown" finished-at="2024-08-23T00:08:15 IST" duration-ms="272" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:08:15 IST" name="setUp" finished-at="2024-08-23T00:08:22 IST" duration-ms="6559" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyBikeLightThumbnailImgTest()[pri:1, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:08:22 IST" name="verifyBikeLightThumbnailImgTest" finished-at="2024-08-23T00:08:22 IST" duration-ms="217" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyBikeLightThumbnailImgTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:08:22 IST" name="tearDown" finished-at="2024-08-23T00:08:22 IST" duration-ms="301" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:08:22 IST" name="setUp" finished-at="2024-08-23T00:08:28 IST" duration-ms="6143" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyBoltTshirtLinkTest()[pri:1, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:08:28 IST" name="verifyBoltTshirtLinkTest" finished-at="2024-08-23T00:08:28 IST" duration-ms="191" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyBoltTshirtLinkTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:08:28 IST" name="tearDown" finished-at="2024-08-23T00:08:29 IST" duration-ms="295" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:08:29 IST" name="setUp" finished-at="2024-08-23T00:08:35 IST" duration-ms="6712" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyBoltTshirtPriceTest()[pri:1, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:08:35 IST" name="verifyBoltTshirtPriceTest" finished-at="2024-08-23T00:08:35 IST" duration-ms="83" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyBoltTshirtPriceTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:08:35 IST" name="tearDown" finished-at="2024-08-23T00:08:36 IST" duration-ms="288" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:08:36 IST" name="setUp" finished-at="2024-08-23T00:08:44 IST" duration-ms="8178" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyBoltTshirtTextTest()[pri:1, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:08:44 IST" name="verifyBoltTshirtTextTest" finished-at="2024-08-23T00:08:44 IST" duration-ms="76" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyBoltTshirtTextTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:08:44 IST" name="tearDown" finished-at="2024-08-23T00:08:44 IST" duration-ms="246" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:08:44 IST" name="setUp" finished-at="2024-08-23T00:08:51 IST" duration-ms="6697" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyBoltTshirtThumbnailImgTest()[pri:1, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:08:51 IST" name="verifyBoltTshirtThumbnailImgTest" finished-at="2024-08-23T00:08:51 IST" duration-ms="233" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyBoltTshirtThumbnailImgTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:08:51 IST" name="tearDown" finished-at="2024-08-23T00:08:51 IST" duration-ms="286" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:08:51 IST" name="setUp" finished-at="2024-08-23T00:08:58 IST" duration-ms="6436" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyDropdownTest()[pri:1, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:08:58 IST" name="verifyDropdownTest" finished-at="2024-08-23T00:09:03 IST" duration-ms="5430" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyDropdownTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:09:03 IST" name="tearDown" finished-at="2024-08-23T00:09:04 IST" duration-ms="361" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:09:04 IST" name="setUp" finished-at="2024-08-23T00:09:10 IST" duration-ms="6736" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyFacebookLogoTest()[pri:1, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:09:10 IST" name="verifyFacebookLogoTest" finished-at="2024-08-23T00:09:11 IST" duration-ms="79" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyFacebookLogoTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:09:11 IST" name="tearDown" finished-at="2024-08-23T00:09:11 IST" duration-ms="276" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:09:11 IST" name="setUp" finished-at="2024-08-23T00:09:18 IST" duration-ms="6962" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyFleeceJacketPriceTest()[pri:1, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:09:18 IST" name="verifyFleeceJacketPriceTest" finished-at="2024-08-23T00:09:18 IST" duration-ms="83" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyFleeceJacketPriceTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:09:18 IST" name="tearDown" finished-at="2024-08-23T00:09:18 IST" duration-ms="284" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:09:18 IST" name="setUp" finished-at="2024-08-23T00:09:24 IST" duration-ms="6159" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyFleeceJacketTest()[pri:1, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:09:24 IST" name="verifyFleeceJacketTest" finished-at="2024-08-23T00:09:25 IST" duration-ms="199" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyFleeceJacketTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:09:25 IST" name="tearDown" finished-at="2024-08-23T00:09:25 IST" duration-ms="315" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:09:25 IST" name="setUp" finished-at="2024-08-23T00:09:32 IST" duration-ms="7011" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyFleeceJacketTextTest()[pri:1, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:09:32 IST" name="verifyFleeceJacketTextTest" finished-at="2024-08-23T00:09:32 IST" duration-ms="86" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyFleeceJacketTextTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:09:32 IST" name="tearDown" finished-at="2024-08-23T00:09:32 IST" duration-ms="299" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:09:32 IST" name="setUp" finished-at="2024-08-23T00:09:39 IST" duration-ms="7012" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyFleeceJacketThumbnailImgTest()[pri:1, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:09:39 IST" name="verifyFleeceJacketThumbnailImgTest" finished-at="2024-08-23T00:09:39 IST" duration-ms="207" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyFleeceJacketThumbnailImgTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:09:39 IST" name="tearDown" finished-at="2024-08-23T00:09:40 IST" duration-ms="303" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:09:40 IST" name="setUp" finished-at="2024-08-23T00:09:46 IST" duration-ms="6121" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyLinkedInLogoTest()[pri:1, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:09:46 IST" name="verifyLinkedInLogoTest" finished-at="2024-08-23T00:09:46 IST" duration-ms="81" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLinkedInLogoTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:09:46 IST" name="tearDown" finished-at="2024-08-23T00:09:46 IST" duration-ms="284" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:09:46 IST" name="setUp" finished-at="2024-08-23T00:09:53 IST" duration-ms="6403" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyTwitterLogoTest()[pri:1, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:09:53 IST" name="verifyTwitterLogoTest" finished-at="2024-08-23T00:09:53 IST" duration-ms="59" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTwitterLogoTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.InventoryPageTest@233795b6]" started-at="2024-08-23T00:09:53 IST" name="tearDown" finished-at="2024-08-23T00:09:53 IST" duration-ms="269" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testcases.InventoryPageTest -->
+      </class> <!-- testcases.BackPackProductPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

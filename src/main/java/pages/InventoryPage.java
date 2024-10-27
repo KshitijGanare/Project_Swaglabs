@@ -79,7 +79,6 @@ public class InventoryPage extends Testbase{
 	@FindBy(xpath = "//a[@id='logout_sidebar_link']") private WebElement logoutLink;
 	@FindBy(xpath = "//a[@id='reset_sidebar_link']") private WebElement resetAppLink;
 	@FindBy(xpath = "//button[@id='react-burger-cross-btn']") private WebElement menuCrossBtn;
-
 	
 	
     //////////////////////    OTHER    //////////////////////////////
@@ -97,6 +96,9 @@ public class InventoryPage extends Testbase{
     @FindBy(xpath="//div[@class='footer_copy']") private WebElement footerText; // Footer Tetxt
 
 
+    WebDriverWait waits = new WebDriverWait(driver, Duration.ofSeconds(10));
+    
+    
 	// Initialization
 	public InventoryPage()
 	{
@@ -267,6 +269,22 @@ public class InventoryPage extends Testbase{
 		}
 		
 	}
+	
+	public Boolean verifyMenuCrossButton() throws InterruptedException
+	{
+		hamburgerBtn.click();
+		waits.until(ExpectedConditions.elementToBeClickable(menuCrossBtn));
+		menuCrossBtn.click();
+		Thread.sleep(2000);
+		
+		try {
+			return aboutLink.isDisplayed();  // If True = TC failed
+		} catch (NoSuchElementException e) {
+		    return false; // If False - TC passed
+		}	
+		
+	}
+	
 	
 	// Footer 
 	public Boolean verifyTwitterLogo() throws InterruptedException
