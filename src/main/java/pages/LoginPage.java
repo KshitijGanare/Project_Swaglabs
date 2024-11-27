@@ -42,7 +42,7 @@ public class LoginPage extends Testbase{
 		return driver.getCurrentUrl();
 	}
 	
-	public String verifyLoginToApplicationMultiCreds(String un, String pw) throws InterruptedException
+	public String verifyLoginMultiCreds(String un, String pw) throws InterruptedException
 	{
 		username.sendKeys(un);
 		password.sendKeys(pw);

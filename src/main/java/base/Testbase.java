@@ -35,7 +35,7 @@ public class Testbase {
 		}
 		
 		driver.manage().window().maximize();
-		driver.get(ReadData.getData("URL"));
+		driver.get(ReadData.getData("url"));
 		Thread.sleep(2000);
 		
 	}

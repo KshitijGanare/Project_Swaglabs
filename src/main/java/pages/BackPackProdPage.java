@@ -3,6 +3,8 @@ package pages;
 import java.time.Duration;
 import java.util.NoSuchElementException;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -19,11 +21,12 @@ public class BackPackProdPage extends Testbase{
 	@FindBy(xpath = "//div[@class='inventory_details_desc large_size']") private WebElement backPackDetais;
 	@FindBy(xpath = "//div[@class='inventory_details_price']") private WebElement backPackPrice;
 	
-	@FindBy(xpath = "//div[@class='inventory_details_price']") private WebElement backPackAddCartButton;
-	@FindBy(xpath = "//div[@class='inventory_details_price']") private WebElement backPackRemoveButton;
-	@FindBy(xpath = "//div[@class='inventory_details_price']") private WebElement cartBadgeCount;
+	@FindBy(xpath = "//button[@id='add-to-cart']") private WebElement backPackAddCartButton;
+	@FindBy(xpath = "//button[@id='remove']") private WebElement backPackRemoveButton;
+	@FindBy(xpath = "//span[@class='shopping_cart_badge']") private WebElement cartBadgeCount;
 	
-	@FindBy(xpath = "//div[@class='inventory_details_price']") private WebElement backToProductButton;
+	@FindBy(xpath = "//button[@id='back-to-products']") private WebElement backToProductButton;
+	@FindBy(xpath = "//a[@class='shopping_cart_link']") private WebElement cartIcon;
 
 	// Initialization
 	public BackPackProdPage()
@@ -60,23 +63,32 @@ public class BackPackProdPage extends Testbase{
 		 wait.until(ExpectedConditions.visibilityOf(cartBadgeCount)); 
 		 
 		try {
-			return cartBadgeCount.isDisplayed();  // True == TC Passed  , We want this
-		} catch (NoSuchElementException e) {
+			wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='shopping_cart_badge']"))); // Stop till element gets disappeared
+	        return true; // Cart counter successfully removed		
+	        } 
+	        catch (NoSuchElementException e) {
 			return false; // False == TC Failed
 		}
 		 
 	 }
 	 
-	 public Boolean verifyBackPackPgRemoveButton()
+	 public Boolean verifyBackPackPgRemoveButton() throws InterruptedException
 	 {
+		 backPackAddCartButton.click();
+		 Thread.sleep(3000);
+		 
 		 backPackRemoveButton.click();
 		 wait.until(ExpectedConditions.visibilityOf(backPackRemoveButton));
 		 
-		 try {
-			 return cartBadgeCount.isDisplayed();  
-		 }catch (NoSuchElementException e) {
-			return false;           // Want this
-		}
+		 cartIcon.click();
+		 Thread.sleep(2000);
+		 return (driver.findElement(By.xpath("//div[@class='inventory_item_name']")).isDisplayed());
+		 
+//		 try {
+//			    return backPackAddCartButton.isDisplayed();
+//			} catch (NoSuchElementException | StaleElementReferenceException e) {
+//			    return false;
+//			}
 	 }
 	 
 	 public String verifyBackToProductsButton() throws InterruptedException

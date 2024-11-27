@@ -1,1 +1,4 @@
-browser=chrome
+url=https://www.saucedemo.com/
+browser=firefox
+username=standard_user
+password=secret_sauce

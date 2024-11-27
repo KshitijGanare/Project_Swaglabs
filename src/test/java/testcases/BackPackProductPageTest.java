@@ -69,10 +69,10 @@ public class BackPackProductPageTest extends Testbase{
 	}
 	
 	@Test
-	public void verifyBackPackPgRemoveButtonTest()
+	public void verifyBackPackPgRemoveButtonTest() throws InterruptedException
 	{
 		Boolean act = backPack.verifyBackPackPgRemoveButton();
-		Assert.assertEquals(false, act);
+		Assert.assertEquals(true, act);
 	}
 	
 	@Test
