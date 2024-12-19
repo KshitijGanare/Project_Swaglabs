@@ -18,7 +18,7 @@ public class CartPageTest extends Testbase{
 	InventoryPage invent;
 	CartPage cart;
 	
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	public void setUp() throws InterruptedException, IOException
 	{
 		initialization();
@@ -30,7 +30,7 @@ public class CartPageTest extends Testbase{
 		
 	}
 	
-	@Test 
+	@Test(priority = 1, enabled = true, groups = {"Sanity", "Regression"}) 
 	public void verifyOrderPriceTest() 
 	{ 
 		String expPrice = "32.39"; 
@@ -39,7 +39,7 @@ public class CartPageTest extends Testbase{
 	} 
 	
 	
-	@Test
+	@Test(priority = 1, enabled = true, groups = {"Sanity", "Regression"})
 	public void verifyBackpacklinkTest()
 	{
 		String expUrl = "https://www.saucedemo.com/inventory-item.html?id=4";
@@ -48,7 +48,7 @@ public class CartPageTest extends Testbase{
 	}
 	
 	
-	@Test
+	@Test(priority = 1, enabled = true, groups = {"Sanity", "Regression"})
 	public void verifyBikeLightLink()
 	{
 		String expUrl = "https://www.saucedemo.com/inventory-item.html?id=0";
@@ -57,7 +57,7 @@ public class CartPageTest extends Testbase{
 	}
 	
 	
-	@Test
+	@Test(priority = 1, enabled = true, groups = {"Sanity", "Regression"})
 	public void verifyContinueShoppingBtnTest()
 	{
 		String expUrl = "https://www.saucedemo.com/inventory.html";
@@ -65,7 +65,7 @@ public class CartPageTest extends Testbase{
 		Assert.assertEquals(actUrl, expUrl);
 	}
 	
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
     public void tearDown()
     {
 		driver.close();

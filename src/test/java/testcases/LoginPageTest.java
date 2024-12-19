@@ -26,14 +26,14 @@ public class LoginPageTest extends Testbase{
 
 	LoginPage login;
 	
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	public void setUp() throws InterruptedException, IOException
 	{
 		initialization();
 		login = new LoginPage();
 	}
 	
-	@Test(priority = 0)
+	@Test(priority = 0, enabled = true)
 	public void verifyTitleTest()
 	{
 		String expTitle = "Swag Labs";
@@ -41,7 +41,7 @@ public class LoginPageTest extends Testbase{
 		Assert.assertEquals(expTitle, actTitle);
 	}
 	
-	@Test(priority = 1)
+	@Test(priority = 1, enabled = true)
 	public void verifyUrlTest()
 	{
 		String expUrl = "https://www.saucedemo.com/";
@@ -49,7 +49,7 @@ public class LoginPageTest extends Testbase{
 		Assert.assertEquals(expUrl, actUrl);
 	}
 	
-	@Test(priority = 2)
+	@Test(priority = 2, enabled = true)
 	public void verifyLoginToApplicationTest()
 	{
 		String expUrl = "https://www.saucedemo.com/inventory.html";
@@ -68,7 +68,7 @@ public class LoginPageTest extends Testbase{
 		};
 	}
 	
-	@Test(dataProvider = "CredentialsSet1")
+	@Test(dataProvider = "CredentialsSet1", enabled = false)
 	public void verifyLoginMultiCredsTest(String username, String password) throws InterruptedException
 	{
 		SoftAssert sa = new SoftAssert();
@@ -100,7 +100,7 @@ public class LoginPageTest extends Testbase{
 	}
 	
 	
-	@Test(dataProvider = "ExcelData")
+	@Test(dataProvider = "ExcelData", enabled = false)
 	public void verifyLoginMultiCredsTestExcel(String username, String password) throws IOException, InterruptedException
 	{
 		SoftAssert sa = new SoftAssert();
@@ -112,7 +112,7 @@ public class LoginPageTest extends Testbase{
 	
 	// ===========================================================================  ==
 	
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
 	public void tearDown(ITestResult itr) throws IOException
 	{
 		if(itr.FAILURE==itr.getStatus())

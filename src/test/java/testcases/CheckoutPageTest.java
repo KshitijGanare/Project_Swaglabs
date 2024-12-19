@@ -20,7 +20,7 @@ public class CheckoutPageTest extends Testbase{
 	CartPage cart;
 	CheckoutPage check;
 	
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	public void setUp() throws InterruptedException, IOException
 	{
 		initialization();
@@ -34,7 +34,7 @@ public class CheckoutPageTest extends Testbase{
 	}
 	
 	
-	@Test
+	@Test(priority = 1, enabled = true)
 	public void verifyEnterFirstnameTest()
     {
     	boolean actResult = true;
@@ -42,7 +42,7 @@ public class CheckoutPageTest extends Testbase{
     }
 
 	
-	@Test
+	@Test(priority = 1, enabled = true)
     public void verifyEnterLastnameTest()
     {
 		boolean actResult = true;
@@ -51,7 +51,7 @@ public class CheckoutPageTest extends Testbase{
     }
     
 	
-	@Test
+	@Test(priority = 1, enabled = true)
     public void verifyCancelBtnTest()
     {
     	String expUrl = "https://www.saucedemo.com/cart.html";
@@ -61,7 +61,7 @@ public class CheckoutPageTest extends Testbase{
     }
 	
 	
-	@Test
+	@Test(priority = 1, enabled = true)
 	public void verifyErrorMessageTest()
 	{
 	    String expText = "Error: First Name is required";
@@ -70,7 +70,7 @@ public class CheckoutPageTest extends Testbase{
 	    	
 	}
 	
-	@Test 
+	@Test (priority = 1, enabled = true)
 	public void verifyTotalPriceTest()
 	{
 	    // Fetch the expected total price from the dynamic calculation method
@@ -79,7 +79,7 @@ public class CheckoutPageTest extends Testbase{
 	    Assert.assertEquals(actualTotalPrice, expectedTotalPrice);
 	}
 	
-	@Test
+	@Test(priority = 1, enabled = true)
     public void verifyFinishButtonTest()
     {
     	String expUrl = "https://www.saucedemo.com/checkout-complete.html";
@@ -87,7 +87,7 @@ public class CheckoutPageTest extends Testbase{
     	Assert.assertEquals(expUrl, actUrl);
     }
 
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
 	public void tearDown()
 	{
 		driver.close();

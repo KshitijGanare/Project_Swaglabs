@@ -26,7 +26,7 @@ public class InventoryPageTest extends Testbase{
 	SoftAssert sa;
 	WebDriverWait wait;
 	
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	public void setUp() throws InterruptedException, IOException
 	{
 		initialization();
@@ -38,7 +38,7 @@ public class InventoryPageTest extends Testbase{
 		wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 	}
 	
-	@Test(priority = 1, enabled = true)
+	@Test(priority = 1, enabled = true, groups = {"Sanity", "Regression"})
 	public void verifyBackpackLinkTest()
 	{
 	    String expUrl = "https://www.saucedemo.com/inventory-item.html?id=4";
@@ -46,7 +46,7 @@ public class InventoryPageTest extends Testbase{
 	    Assert.assertEquals(expUrl, actUrl);
 	}
 	
-	@Test(priority = 1, enabled = true)
+	@Test(priority = 1, enabled = true, groups = {"Sanity" , "Regression"}, alwaysRun = true)
 	public void verifyBackPackTextTest()
 	{
 		Boolean exp = true;
@@ -54,7 +54,7 @@ public class InventoryPageTest extends Testbase{
 		Assert.assertEquals(exp, act);
 	}
 	
-	@Test(priority = 1, enabled = true)
+	@Test(priority = 1, enabled = true, groups = {"Sanity"})
 	public void verifyBackPackThumbnailImgTest()
 	{
 		String expUrll = "https://www.saucedemo.com/inventory-item.html?id=4";
@@ -71,7 +71,7 @@ public class InventoryPageTest extends Testbase{
 	
 	// BikeLight Product
 	
-	@Test(priority = 1, enabled = true)
+	@Test(priority = 1, enabled = true, groups = {"Sanity"})
 	public void verifyBikeLightLinkTest()
 	{
 	    String expUrl = "https://www.saucedemo.com/inventory-item.html?id=0";
@@ -79,7 +79,7 @@ public class InventoryPageTest extends Testbase{
 	    Assert.assertEquals(expUrl, actUrl);
 	}
 	
-	@Test(priority = 1, enabled = true)
+	@Test(priority = 1, enabled = false)
 	public void verifyBikeLightTextTest()
 	{
 		Boolean exp = true;
@@ -87,7 +87,7 @@ public class InventoryPageTest extends Testbase{
 		Assert.assertEquals(exp, act);
 	}
 	
-	@Test(priority = 1, enabled = true)
+	@Test(priority = 1, enabled = false, groups = {"Sanity"})
 	public void verifyBikeLightThumbnailImgTest()
 	{
 		String expUrll = "https://www.saucedemo.com/inventory-item.html?id=0";
@@ -96,7 +96,7 @@ public class InventoryPageTest extends Testbase{
 	}
 	
 	
-	@Test(priority = 1, enabled = true)
+	@Test(priority = 1, enabled = false)
     public void verifyBikeLightPriceTest()
     {
 		Boolean actResult = invent.verifyBikeLightPrice();
@@ -105,8 +105,7 @@ public class InventoryPageTest extends Testbase{
 	
 	
 	// 3. BoltTshirt Product
-	
-	@Test(priority = 1, enabled = true)
+	@Test(priority = 1, enabled = true, groups = {"Sanity"})
 	public void verifyBoltTshirtLinkTest()
 	{
 	    String expUrl = "https://www.saucedemo.com/inventory-item.html?id=1";
@@ -114,7 +113,7 @@ public class InventoryPageTest extends Testbase{
 	    Assert.assertEquals(expUrl, actUrl);
 	}
 	
-	@Test(priority = 1, enabled = true)
+	@Test(priority = 1, enabled = false)
 	public void verifyBoltTshirtTextTest()
 	{
 		Boolean exp = true;
@@ -122,7 +121,7 @@ public class InventoryPageTest extends Testbase{
 		Assert.assertEquals(exp, act);
 	}
 	
-	@Test(priority = 1, enabled = true)
+	@Test(priority = 1, enabled = false, groups = {"Sanity"})
 	public void verifyBoltTshirtThumbnailImgTest()
 	{
 		String expUrll = "https://www.saucedemo.com/inventory-item.html?id=1";
@@ -131,7 +130,7 @@ public class InventoryPageTest extends Testbase{
 	}
 	
 	
-	@Test(priority = 1, enabled = true)
+	@Test(priority = 1, enabled = false)
     public void verifyBoltTshirtPriceTest()
     {
 		Boolean actResult = invent.verifyBikeLightPrice();
@@ -140,8 +139,7 @@ public class InventoryPageTest extends Testbase{
 	
 	
 	// 4. Fleece Jacket Product
-	
-	@Test(priority = 1, enabled = true)
+	@Test(priority = 1, enabled = true, groups = {"Sanity"})
 	public void verifyFleeceJacketTest()
 	{
 	    String expUrl = "https://www.saucedemo.com/inventory-item.html?id=5";
@@ -149,7 +147,7 @@ public class InventoryPageTest extends Testbase{
 	    Assert.assertEquals(expUrl, actUrl);
 	}
 	
-	@Test(priority = 1, enabled = true)
+	@Test(priority = 1, enabled = false, groups = {"Sanity"})
 	public void verifyFleeceJacketTextTest()
 	{
 		Boolean exp = true;
@@ -157,7 +155,7 @@ public class InventoryPageTest extends Testbase{
 		Assert.assertEquals(exp, act);
 	}
 	
-	@Test(priority = 1, enabled = true)
+	@Test(priority = 1, enabled = true, groups = {"Sanity"})
 	public void verifyFleeceJacketThumbnailImgTest()
 	{
 		String expUrll = "https://www.saucedemo.com/inventory-item.html?id=5";
@@ -166,7 +164,7 @@ public class InventoryPageTest extends Testbase{
 	}
 	
 	
-	@Test(priority = 1, enabled = true)
+	@Test(priority = 1, enabled = false)
     public void verifyFleeceJacketPriceTest()
     {
 		Boolean actResult = invent.verifyFleeceJacketPrice();
@@ -176,7 +174,7 @@ public class InventoryPageTest extends Testbase{
 ////////////////////////////////////////////////////////////////////////////////////////////////////	
 	
 	// Side Menu Test
-	@Test
+	@Test(priority = 1, enabled = true, groups = {"Sanity"})
 	public void verifyAboutMenuLinkTest() throws InterruptedException
 	{
 		String expUrla = "https://saucelabs.com/";
@@ -184,7 +182,7 @@ public class InventoryPageTest extends Testbase{
 		sa.assertEquals(expUrla, actUrla);
 	}
 	
-	@Test(enabled = true)
+	@Test(priority = 2, enabled = true, groups = {"Sanity"})
 	public void verifylogoutLinkTest()
 	{
 		String expUrlc = "https://www.saucedemo.com/";
@@ -192,14 +190,14 @@ public class InventoryPageTest extends Testbase{
 		Assert.assertEquals(expUrlc, actUrlc);
 	}
 	
-	@Test(enabled = true)
+	@Test(priority = 2, enabled = true, groups = {"Sanity"})
 	public void verifyResetAppStateTest() throws InterruptedException
 	{
-		Boolean actState = invent.verifyResetAppState();
+		Boolean actState = invent.verifyResetAppState(); 
 		Assert.assertEquals(false, actState,"Testcase failed as remove button is still displayed");
 	}
 	
-	@Test
+	@Test(priority = 1, enabled = true, groups = {"Sanity"})
 	public void verifyMenuCrossButtonTest() throws InterruptedException
 	{
 		Boolean actRes = invent.verifyMenuCrossButton();
@@ -208,7 +206,7 @@ public class InventoryPageTest extends Testbase{
 	}
 	
 	////////////////////////////////////////////////////////////////////////////////////////////////////
-	@Test(priority = 1, enabled = true)
+	@Test(priority = 1, enabled = true, groups = {"Sanity"})
 	public void verifyDropdownTest() throws InterruptedException
 	{
 		invent.verifyDropdown();
@@ -216,28 +214,28 @@ public class InventoryPageTest extends Testbase{
 	
 	
 	///////////////////////////////////////// Footer Section  /////////////////////////////////
-	@Test(priority = 1, enabled = true)
+	@Test(priority = 1, enabled = true, groups = {"Regression"})
 	public void verifyTwitterLogoTest() throws InterruptedException
 	{
 		Boolean expUrl = invent.verifyTwitterLogo();
 		Assert.assertEquals(true, expUrl);
 	}
 	
-	@Test(priority = 1, enabled = true)
+	@Test(priority = 1, enabled = false, groups = {"Regression"})
 	public void verifyFacebookLogoTest()
 	{
 		Boolean actUrl = invent.verifyFacebookLogo();
 		Assert.assertEquals(true, actUrl);
 	}
 	
-	@Test(priority = 1, enabled = true)
+	@Test(priority = 1, enabled = false, groups = {"Regression"})
 	public void verifyLinkedInLogoTest() throws InterruptedException
 	{
 		Boolean actUrll = invent.verifyLinkedInLogo();
 		Assert.assertEquals(true, actUrll);
 	}
 	
-	@Test
+	@Test(priority = 1, enabled = false, groups = {"Regression"})
 	public void verifyFooterText()
 	{
 		Boolean actResult = invent.verifyFooterText();
@@ -246,7 +244,7 @@ public class InventoryPageTest extends Testbase{
 	
 	
 	
-	@Test(enabled = false)
+	@Test(priority = 1, enabled = false)
 	public void verifyMouseMovementTest() throws InterruptedException
 	{
 		String expCount = "4";
@@ -254,7 +252,7 @@ public class InventoryPageTest extends Testbase{
 		Assert.assertEquals(expCount, actCount);
 	}
 	
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
 	public void tearDown(ITestResult itr) throws IOException
 	{
 		if(itr.FAILURE==itr.getStatus())

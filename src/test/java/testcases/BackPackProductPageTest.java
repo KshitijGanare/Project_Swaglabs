@@ -20,7 +20,7 @@ public class BackPackProductPageTest extends Testbase{
 	InventoryPage invent;
 	BackPackProdPage backPack; 
 	
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	public void setUp() throws InterruptedException, IOException
 	{
 		initialization();
@@ -33,49 +33,49 @@ public class BackPackProductPageTest extends Testbase{
 	}
 	
 	
-	@Test
+	@Test(priority = 4, enabled = true)
 	public void verifyBackPackTitleTest()
 	{
 		Boolean act = backPack.verifyBackPackTitle();
         Assert.assertEquals(true, act);
 	}
 	
-	@Test
+	@Test(priority = 3, enabled = true, groups = {"Sanity", "Regression"})
 	public void verifyBackPackThumbnailImgTest()
 	{
 		Boolean act = backPack.verifyBackPackThumbnailImg();
 		Assert.assertEquals(true, act);
 	}
 	
-	@Test
+	@Test(priority = 2, enabled = true)
 	public void verifyBackPackDetailsTest()
 	{
 		Boolean act = backPack.verifyBackPackDetails();
 		Assert.assertEquals(true, act);
 	}
 	
-	@Test
+	@Test(priority = 1, enabled = true)
 	public void verifyBackPackPriceTest()
 	{
 		Boolean act = backPack.verifyBackPackPrice();
 		Assert.assertEquals(true, act);
 	}
 	
-	@Test
+	@Test(priority = 0, enabled = true, groups = {"Sanity", "Regression"})
 	public void verifyBackPackPgAddCartButtonTest()
-	{
+	{ 
 		Boolean act = backPack.verifyBackPackPgAddCartButton();
 		Assert.assertEquals(true, act);
 	}
 	
-	@Test
+	@Test(priority = 1, enabled = true, groups = {"Sanity", "Regression"})
 	public void verifyBackPackPgRemoveButtonTest() throws InterruptedException
 	{
 		Boolean act = backPack.verifyBackPackPgRemoveButton();
 		Assert.assertEquals(true, act);
 	}
 	
-	@Test
+	@Test(priority = 1, enabled = true, groups = {"Sanity", "Regression"})
 	public void verifyBackToProductsButtonTest() throws InterruptedException
 	{
 		String expUrl = "https://www.saucedemo.com/inventory.html";
@@ -84,7 +84,7 @@ public class BackPackProductPageTest extends Testbase{
 	}
 	
 	
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
     public void tearDown(ITestResult itr) throws IOException
     {
 		if(itr.FAILURE == itr.getStatus())
