@@ -262,5 +262,5 @@ public class InventoryPageTest extends Testbase{
 		driver.quit();
 		
 	}
-// Sort/Filter remaining 
+
 }
