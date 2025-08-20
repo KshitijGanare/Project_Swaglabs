@@ -9,7 +9,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import utility.ReadData;
-import utility.readData;
+
 
 public class Testbase {
 

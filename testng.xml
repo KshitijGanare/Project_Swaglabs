@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
+<suite name="Suite">a
   <test thread-count="5" name="Test">
     <classes>
       <class name="testcases.InventoryPageTest"/>
       <class name="testcases.LoginPageTest"/>
+      <class name="testcases.CartPageTest">
+        <methods>
+          <include name="verifyOrderPriceTest"></include>
+          <include name="verifyBackpacklinkTest"></include>
+          <include name="verifyBikeLightLink"></include>
+        </methods>
+      </class>
+      <class name="testcases.BackPackProductPageTest"></class>
+      <class name="testcases.CheckoutPageTest"></class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
