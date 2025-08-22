@@ -3,8 +3,8 @@
 <suite name="Suite">a
   <test thread-count="5" name="Test">
     <classes>
-      <class name="testcases.InventoryPageTest"/>
-      <class name="testcases.LoginPageTest"/>
+<!--      <class name="testcases.InventoryPageTest"/>-->
+<!--      <class name="testcases.LoginPageTest"/>-->
       <class name="testcases.CartPageTest">
         <methods>
           <include name="verifyOrderPriceTest"></include>

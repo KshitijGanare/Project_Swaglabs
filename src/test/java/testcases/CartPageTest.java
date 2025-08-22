@@ -64,6 +64,14 @@ public class CartPageTest extends Testbase{
 		String actUrl = cart.verifyContinueBtn();
 		Assert.assertEquals(actUrl, expUrl);
 	}
+
+	@Test(priority = 1, enabled = false, groups = {"Sanity", "Regression"})
+	public void verifyShoppingLinkTest()
+	{
+		String expUrl = "https://www.saucedemo.com/inventory.html";
+		String actUrl = cart.verifyContinueBtn();
+		Assert.assertEquals(actUrl, expUrl);
+	}
 	
 	@AfterMethod(alwaysRun = true)
     public void tearDown()
